@@ -1,0 +1,24 @@
+{
+  "name": "ssensuum-qa-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript QA automation framework for SSENSUUM",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:e2e": "playwright test --project=desktop-chromium",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:rf": "playwright test --grep @rf",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "install:browsers": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.0.0",
+    "dotenv": "^17.2.0",
+    "typescript": "^5.9.0"
+  }
+}

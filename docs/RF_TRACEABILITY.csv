@@ -1,0 +1,44 @@
+RF,Module,Requirement,Priority,Automation Layer,Initial Test/Status
+RF-001,Public site,Show complete catalog,P0,E2E,tests/e2e/public/catalog.spec.ts
+RF-002,Public site,Highlight special services,P1,E2E,TODO
+RF-003,Public site,Show team,P0,E2E,TODO
+RF-004,Public site,Show location and parking,P0,E2E,TODO
+RF-005,Public site,Video carousel,P2,E2E,TODO
+RF-010,Booking,Choose service,P0,E2E,tests/e2e/booking/booking-flow.spec.ts
+RF-011,Booking,Choose therapist,P0,E2E/API,tests/e2e/booking/booking-flow.spec.ts
+RF-012,Booking,Choose two therapists,P0,API/E2E,tests/e2e/booking/two-therapists.spec.ts
+RF-013,Booking,Show next 14 days,P0,API/E2E,tests/api/booking/availability.spec.ts
+RF-014,Booking,Show real available slots,P0,API,tests/api/booking/availability.spec.ts
+RF-015,Booking,Block appointments under 3 hours,P0,API,TODO
+RF-016,Booking,Show summary before payment,P0,E2E,tests/e2e/booking/booking-flow.spec.ts
+RF-017,Booking,Reschedule or cancel,P0,API,tests/api/booking/reschedule.spec.ts
+RF-020,Payments,Charge deposit,P0,API,tests/api/payments/deposit.spec.ts
+RF-021,Payments,Confirm only after provider approval,P0,API,tests/api/payments/webhook.spec.ts
+RF-022,Payments,Send receipt,P1,Integration,TODO
+RF-023,Payments,Register final payment,P0,API/E2E,TODO
+RF-024,Payments,Register tip,P1,API/E2E,TODO
+RF-025,Payments,Refund or apply deposits,P1,API,TODO
+RF-030,Member account,Login,P0,E2E,tests/e2e/membership/login.spec.ts
+RF-031,Member account,Recover password,P0,E2E/Integration,TODO
+RF-032,Member account,Apply member price,P0,API,tests/api/membership/member-price.spec.ts
+RF-033,Member account,Save payment method token,P1,Integration,TODO
+RF-034,Member account,One-click repeat booking,P1,E2E/API,TODO
+RF-035,Member account,View history,P1,E2E/API,TODO
+RF-040,Memberships,Create membership,P0,API/E2E,TODO
+RF-041,Memberships,Notify upcoming expirations,P0,API,TODO
+RF-042,Memberships,Renew membership,P1,API/E2E,TODO
+RF-043,Memberships,List birthdays of the week,P0,API,TODO
+RF-044,Memberships,Book birthday massage,P0,API/E2E,tests/api/membership/birthday-benefit.spec.ts
+RF-045,Memberships,Lose birthday benefit after no-show,P1,API,tests/api/membership/birthday-benefit.spec.ts
+RF-050,Operations,View day agenda,P0,API/E2E,tests/api/admin/agenda.spec.ts
+RF-051,Operations,Create manual reservation,P0,API/E2E,TODO
+RF-052,Operations,Block schedules,P0,API/E2E,TODO
+RF-053,Operations,Mark attendance,P0,API/E2E,TODO
+RF-054,Operations,Cash closing,P0,API/E2E,TODO
+RF-055,Operations,Prevent double bookings,P0,API,tests/api/booking/double-booking.spec.ts
+RF-060,Customers,Customer record by unique phone,P0,API/DB,TODO
+RF-061,Customers,Import current Excel,P0,API/DB,TODO
+RF-062,Messages,Automatic booking confirmation,P0,Integration,TODO
+RF-063,Messages,Three-hour reminder,P0,Integration,TODO
+RF-064,Messages,Follow-up messages,P1,Integration,TODO
+RF-065,Customers,Export data,P1,API/E2E,TODO
